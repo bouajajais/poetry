@@ -8,6 +8,8 @@ It provides a convenient environment for managing Python projects with Poetry.
 
 Tags reflect the image of python used and the version of poetry installed on top.
 
+Tags follow this format : `${POETRY_VERSION}-python${PYTHON_TAG}`.
+
 Currently, `latest` corresponds to `1.8-python3.12-slim`.
 
 Here are the TAGS currently available :
