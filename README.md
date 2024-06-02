@@ -46,6 +46,11 @@ To clone the github repository containing the Dockerfile used, follow these step
     - `ARG PYTHONDONTWRITEBYTECODE=1`: Other argument.
     - `ARG PYTHONUNBUFFERED=1`: Other argument.
 
+3. Run the Docker container:
+    ```bash
+    docker run --rm -it poetry bash
+    ```
+
 ## Contributing
 
 Contributions are welcome! If you have any suggestions, bug reports, or feature requests, please open an issue or submit a pull request.
