@@ -1,25 +1,26 @@
 # poetry
 
-This is a Docker image based on Python that installs Poetry on top.
+This Docker image is built on top of the `python` image.
 
-It provides a convenient environment for managing Python projects with Poetry.
+It installs the following element(s) on top:
+
+poetry
 
 ## Available tags
 
 Tags reflect the image of python used and the version of poetry installed on top.
 
-Tags follow this format : `${POETRY_VERSION}-python${PYTHON_TAG}`.
+Tags follow this format : `{POETRY_VERSION}-python{PYTHON_TAG}`.
 
 Currently, `latest` corresponds to `1.8-python3.12-slim`.
 
-Here are the TAGS currently available :
-```Python
-POETRY_VERSIONS = ["1.6", "1.7", "1.8"]
-PYTHON_VERSIONS = ["3.8", "3.9", "3.10", "3.11", "3.12"]
-PYTHON_TYPES = ["", "-slim"]
-```
-
 Other tags will be added later.
+
+## Dockerhub
+
+These images can be found in Dockerhub through the following link:
+
+[https://hub.docker.com/repository/docker/ismailbouajaja/poetry/general](https://hub.docker.com/repository/docker/ismailbouajaja/poetry/general)
 
 ## Clone repository
 
@@ -27,7 +28,7 @@ To clone the github repository containing the Dockerfile used, follow these step
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/bouajajais/poetry.git
+    git clone [https://github.com/bouajajais/poetry.git](https://github.com/bouajajais/poetry.git)
     ```
 
 2. Navigate to the project directory:
