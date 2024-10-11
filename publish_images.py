@@ -134,10 +134,10 @@ def update_github(
         LATEST_PYTHON_TAG=latest_python_tag
     )
     
-    # if current_readme == readme:
-    #     if verbose >= 1:
-    #         print("No changes to README.md...")
-    #     return
+    if current_readme == readme:
+        if verbose >= 1:
+            print("No changes to README.md...")
+        return
     
     with open(Path(__file__).parent / "README.md", "w") as file:
         file.write(readme)
