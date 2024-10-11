@@ -1,4 +1,4 @@
-# poetry
+# {IMAGE_NAME}
 
 This Docker image is built on top of the `{BASE_IMAGE}` image.
 
@@ -6,15 +6,9 @@ It installs the following element(s) on top:
 
 {INSTALLED_FEATURES}
 
-## Available tags
-
-Tags reflect the image of python used and the version of poetry installed on top.
+## Tag Format
 
 Tags follow this format : `{TAG_FORMAT}`.
-
-Currently, `latest` corresponds to `{DEFAULT_TAG}`.
-
-Other tags will be added later.
 
 ## Dockerhub
 
@@ -26,9 +20,9 @@ These images can be found in Dockerhub through the following link:
 
 To clone the github repository containing the Dockerfile used, follow these steps :
 
-1. Clone the repository:
+1. Clone the repository [https://github.com/{GITHUB_USERNAME}/{IMAGE_NAME}.git](https://github.com/{GITHUB_USERNAME}/{IMAGE_NAME}.git):
     ```bash
-    git clone [https://github.com/{GITHUB_USERNAME}/{IMAGE_NAME}.git](https://github.com/{GITHUB_USERNAME}/{IMAGE_NAME}.git)
+    git clone https://github.com/{GITHUB_USERNAME}/{IMAGE_NAME}.git
     ```
 
 2. Navigate to the project directory:

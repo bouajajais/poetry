@@ -108,12 +108,6 @@ def update_github(
     ) -> None:
     with open(Path(__file__).parent / "README_template.md", "r") as file:
         readme = file.read()
-        
-    latest_tag = get_tag(
-        tag_format=tag_format,
-        poetry_version=latest_poetry_version,
-        python_tag=latest_python_tag
-    )
 
     readme = readme.format(
         BASE_IMAGE=base_image,
@@ -122,7 +116,6 @@ def update_github(
         GITHUB_USERNAME=github_username,
         IMAGE_NAME=image_name,
         TAG_FORMAT=tag_format,
-        DEFAULT_TAG=latest_tag,
         LATEST_POETRY_VERSION=latest_poetry_version,
         LATEST_PYTHON_TAG=latest_python_tag
     )
